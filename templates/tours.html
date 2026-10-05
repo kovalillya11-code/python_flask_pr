@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+
+{% block title %}Тури{% endblock %}
+
+{% block content %}
+<h1>Актуальні тури</h1>
+<div class="tours-container">
+    <div class="tour-card">
+        <img src="{{ url_for('static', filename='../static/image/rwrwrw.jpg') }}" alt="Тропічний пляж">
+        <div class="tour-info">
+            <h3>Тропічний рай</h3>
+            <p>Відпочинок на білосніжному узбережжі океану під пальмами.</p>
+            <span class="tour-price">25 000 грн</span>
+        </div>
+    </div>
+    <div class="tour-card">
+        <img src="{{ url_for('static', filename='../static/image/gggg.jpg') }}" alt="Гірські вершини">
+        <div class="tour-info">
+            <h3>Гірський вікенд</h3>
+            <p>Активний тур з пішохідними прогулянками та неймовірними краєвидами.</p>
+            <span class="tour-price">12 000 грн</span>
+        </div>
+    </div>
+    <div class="tour-card">
+        <img src="{{ url_for('static', filename='../static/image/gfgfgf.jpg') }}" alt="Старовинне місто">
+        <div class="tour-info">
+            <h3>Європейська класика</h3>
+            <p>Екскурсійний тур архітектурними пам'ятками старої Європи.</p>
+            <span class="tour-price">18 500 грн</span>
+        </div>
+    </div>
+</div>
+{% endblock %}

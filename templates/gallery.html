@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block title %}Галерея{% endblock %}
+
+{% block content %}
+<h1>Галерея подорожей</h1>
+<div class="gallery-grid">
+    <div class="gallery-item"><img src="{{ url_for('static', filename='../static/image/higt.jpg') }}" alt="Пейзаж 1"></div>
+    <div class="gallery-item"><img src="{{ url_for('static', filename='../static/image/lic.avif') }}" alt="Пейзаж 2"></div>
+    <div class="gallery-item"><img src="{{ url_for('static', filename='../static/image/lod.avif') }}" alt="Пейзаж 3"></div>
+    <div class="gallery-item"><img src="{{ url_for('static', filename='../static/image/pexels-asadphoto-1450361.jpg') }}" alt="Пейзаж 4"></div>
+    <div class="gallery-item"><img src="{{ url_for('static', filename='../static/image/fdfdf.jpg') }}" alt="Пейзаж 5"></div>
+    <div class="gallery-item"><img src="{{ url_for('static', filename='../static/image/kem.avif') }}" alt="Пейзаж 6"></div>
+</div>
+{% endblock %}
